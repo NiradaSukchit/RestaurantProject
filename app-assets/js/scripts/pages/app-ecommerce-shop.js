@@ -156,6 +156,12 @@ $(document).ready(function () {
     $(this).closest(".ecommerce-card").remove();
   })
 })
+
+ // remove items from wishlist page
+ $(".remove-menu").on("click", function () {
+  $(this).closest(".kitchen-card").remove(); })
+
+
 // on window resize hide sidebar
 $(window).on("resize", function () {
   if ($(window).width() <= 991) {

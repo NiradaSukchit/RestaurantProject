@@ -11,7 +11,7 @@
     <meta name="keywords"
         content="admin template, Vuesax admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>สั่งรายการอาหาร</title>
+    <title>บริการลูกค้า</title>
     <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/Project/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
@@ -82,18 +82,21 @@
                 <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-printer"></i><span
                             class="menu-title" data-i18n="Calender">ดูประวัติการขาย</span></a>
                 </li>
-                <li class=" navigation-header"><span>สำหรับพนักงาน</span>
+                <li class=" navigation-header"><span>สำหรับผู้จัดการและพนักงาน</span>
                 </li>
-                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-crosshair"></i><span
-                            class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
+                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-bell"></i><span
+                            class="menu-title" data-i18n="Chat">บริการลูกค้า</span></a>
                 </li>
-                
-                <li class=" navigation-header"><span>สำหรับครัว</span>
+
+
+                <li class=" navigation-header"><span>ผู้จัดการและสำหรับครัว</span>
                 </li>
                 <li class=" nav-item"><a href="Kitchen.html"><i class="feather icon-inbox"></i><span class="menu-title"
-                            data-i18n="Email">รายการอาหาร</span></a>
+                            data-i18n="Email">รายการอาหารที่ได้รับ</span></a>
                 </li>
-                
+                <li class=" nav-item"><a href="KitchenHistory.html"><i class="feather icon-clipboard"></i><span
+                            class="menu-title" data-i18n="Email">รายการอาหาร</span></a>
+                </li>
 
             </ul>
         </div>
@@ -118,7 +121,7 @@
                             </ul>
                             <ul class="nav navbar-nav bookmark-icons">
                                 <li class="nav-item d-none d-lg-block" style="font-size: 20px"><i
-                                        class="ficon feather icon-crosshair"></i> จัดการรายการอาหาร</li>
+                                        class="ficon feather icon-crosshair"></i> บริการลูกค้า</li>
                             </ul>
                             <ul class="nav navbar-nav">
                                 <div class="bookmark-input search-input">
@@ -196,20 +199,30 @@
                                                 <td>1</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                </td>
+
+                                                <td>
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                        เพิ่มรายการ</a> <br>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
                                                 </td>
-                                                <td>
-                                                    <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                        ตรวจสอบ</a> <br>
-                                                </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -217,20 +230,28 @@
                                                 <td>2</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-danger">ไม่ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-danger">ไม่ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: red;margin-left: 6px;">
+                                                        <b>ไม่ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                    <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                        เพิ่มรายการ</a> <br>
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                        ตรวจสอบ</a> <br>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
                                                 </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -238,20 +259,28 @@
                                                 <td>3</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                    <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                        เพิ่มรายการ</a> <br>
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                        ตรวจสอบ</a> <br>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
                                                 </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -259,20 +288,28 @@
                                                 <td>4</td>
                                                 <td>6</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-danger">ไม่ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-danger">ไม่ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: red;margin-left: 6px;">
+                                                        <b>ไม่ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                    <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                        เพิ่มรายการ</a> <br>
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                        ตรวจสอบ</a> <br>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
                                                 </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -280,20 +317,28 @@
                                                 <td>5</td>
                                                 <td>10</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-danger">ไม่ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-danger">ไม่ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: red;margin-left: 6px;">
+                                                        <b>ไม่ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                    <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                        เพิ่มรายการ</a> <br>
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                        ตรวจสอบ</a> <br>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
                                                 </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -301,20 +346,29 @@
                                                 <td>6</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div-> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                    <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                        เพิ่มรายการ</a> <br>
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
                                                 </td>
                                                 <td>
-                                                    <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                        ตรวจสอบ</a> <br>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
                                                 </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -322,20 +376,28 @@
                                                 <td>7</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                        <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                            เพิ่มรายการ</a> <br>
-                                                    </td>
-                                                    <td>
-                                                        <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                            ตรวจสอบ</a> <br>
-                                                    </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -343,20 +405,28 @@
                                                 <td>8</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                        <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                            เพิ่มรายการ</a> <br>
-                                                    </td>
-                                                    <td>
-                                                        <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                            ตรวจสอบ</a> <br>
-                                                    </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -364,20 +434,28 @@
                                                 <td>9</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                        <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                            เพิ่มรายการ</a> <br>
-                                                    </td>
-                                                    <td>
-                                                        <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                            ตรวจสอบ</a> <br>
-                                                    </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
+                                                </td>
+                                            </tr>
                                             </tr>
 
                                             <tr>
@@ -385,23 +463,28 @@
                                                 <td>10</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-primary">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-primary">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                        <a href="OrderMenu.html"><i class="feather icon-plus-circle"></i>
-                                                            เพิ่มรายการ</a> <br>
-                                                    </td>
-                                                    <td>
-                                                        <a href="OrderStatus.html"><i class="feather icon-check-circle"></i>
-                                                            ตรวจสอบ</a> <br>
-                                                    </td>
-                                                <!-- <td>
-                                                    <a href="OrderBill.html"><i class="feather icon-credit-card"></i>
-                                                        ชำระเงิน</a> <br>
-                                                </td> -->
+                                                    <a href="OrderMenu.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white"></i> เพิ่มรายการ</button>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="OrderStatus.html" style="color: white"><button
+                                                            class="btn btn-primary"
+                                                            style="padding-left: 40px; padding-right: 40px;"> <i
+                                                                style="color: white; text-align: center;"></i>
+                                                            ตรวจสอบ</button>
+                                                    </a>
+                                                </td>
                                             </tr>
-
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -411,43 +494,42 @@
                     <!-- End Users Profile -->
                 </section>
                 <!-- User Table -->
+            </div>
         </div>
-      </div>
     </div>
     <!-- END: Content -->
 
-                <div class="sidenav-overlay"></div>
-                <div class="drag-target"></div>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
 
-                <footer class="footer footer-static footer-light">
-                    <span class="float-md-right d-none d-md-block">COPYRIGHT &copy; 2019 <a
-                            href="https://www.zeevsoft.com/" target="_blank"> ZeevSoft</a> All rights Reserved
-                        <i class="feather icon-heart pink"></i></span>
-                    <button class="btn btn-primary btn-icon scroll-top" type="button"><i
-                            class="feather icon-arrow-up"></i></button>
-                    </p>
-                </footer>
+    <footer class="footer footer-static footer-light">
+        <span class="float-md-right d-none d-md-block">COPYRIGHT &copy; 2019 <a href="https://www.zeevsoft.com/"
+                target="_blank"> ZeevSoft</a> All rights Reserved
+            <i class="feather icon-heart pink"></i></span>
+        <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
+        </p>
+    </footer>
 
 
-                <!-- BEGIN: Vendor JS-->
-                <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
-                <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
 
-                <!-- BEGIN: Page Vendor JS-->
-                <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-                <script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-                <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
-                <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
+    <!-- END: Page Vendor JS-->
 
-                <!-- BEGIN: Theme JS-->
-                <script src="../../../app-assets/js/core/app-menu.js"></script>
-                <script src="../../../app-assets/js/core/app.js"></script>
-                <script src="../../../app-assets/js/scripts/components.js"></script>
-                <!-- END: Theme JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
 
-                <!-- BEGIN: Page JS-->
-                <script src="../../../app-assets/js/scripts/datatables/user-datatable.js"></script>
-                <!-- END: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/datatables/user-datatable.js"></script>
+    <!-- END: Page JS-->
 
 </body>
 <!-- END: Body-->

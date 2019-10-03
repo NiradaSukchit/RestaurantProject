@@ -84,16 +84,19 @@
                 <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-printer"></i><span
                             class="menu-title" data-i18n="Calender">ดูประวัติการขาย</span></a>
                 </li>
-                <li class=" navigation-header"><span>สำหรับพนักงาน</span>
+                <li class=" navigation-header"><span>สำหรับผู้จัดการและพนักงาน</span>
                 </li>
-                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-crosshair"></i><span
-                            class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
+                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-bell"></i><span
+                            class="menu-title" data-i18n="Chat">บริการลูกค้า</span></a>
                 </li>
 
-                <li class=" navigation-header"><span>สำหรับครัว</span>
+                <li class=" navigation-header"><span>ผู้จัดการและสำหรับครัว</span>
                 </li>
                 <li class=" nav-item"><a href="Kitchen.html"><i class="feather icon-inbox"></i><span class="menu-title"
-                            data-i18n="Email">รายการอาหาร</span></a>
+                            data-i18n="Email">รายการอาหารที่ได้รับ</span></a>
+                </li>
+                <li class=" nav-item"><a href="KitchenHistory.html"><i class="feather icon-clipboard"></i><span
+                            class="menu-title" data-i18n="Email">รายการอาหาร</span></a>
                 </li>
 
             </ul>
@@ -191,13 +194,12 @@
                                                 <th>โต๊ะ</th>
                                                 <th>หมายเหตุ</th>
                                                 <th>รับรายการ</th>
-                                                <th>ส่งรายการ</th>
 
                                             </tr>
                                         </thead>
                                         <tbody>
 
-                                            <tr>
+                                            <tr class="kitchen-card">
                                                 <td></td>
                                                 <td>10:24 น.</td>
                                                 <td>
@@ -211,16 +213,13 @@
                                                 <td>N</td>
                                                 <td>ไม่ใส่พริกไทย</td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-log-in"></i>รับ</a>
-                                                </td>
-                                                <td>
-                                                    <a href="#" style="color: gray"><i class="feather icon-check"></i>
-                                                        สำเร็จ</a>
-                                                    <!-- <a href="#"><i class="feather icon-check"></i> สำเร็จ</a> -->
-
+                                                    <button class="btn wishlist remove-menu " style="background-color: #7367f0;color: white; 
+                                                            padding-left: 20px; padding-right: 20px;">
+                                                        <i></i> รับรายการ
+                                                    </button>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td></td>
                                                 <td>10:15 น.</td>
 
@@ -235,17 +234,16 @@
                                                 <td>N</td>
                                                 <td> </td>
                                                 <td>
-                                                    <a href="#" style="color: gray"><i
-                                                            class="m-1 feather icon-log-in"></i>รับ</a>
-                                                    <!-- <a href="#"><i class="m-1 feather icon-log-in"></i>รับ</a> -->
+                                                        <div class="card ecommerce-card"><button
+                                                                class="btn wishlist remove-wishlist "
+                                                                style="background-color: #7367f0;color: white">
+                                                                <i></i> รับรายการ
+                                                            </button> </div>
+                                                    </td>
 
-                                                </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-check"></i> สำเร็จ</a>
-                                                </td>
-                                            </tr>
+                                            </tr> -->
 
-                                            <tr>
+                                            <!-- <tr>
                                                 <td></td>
                                                 <td>10:14 น.</td>
 
@@ -261,17 +259,13 @@
                                                 <td>N</td>
                                                 <td>หวานน้อย</td>
                                                 <td>
-                                                    <a href="#" style="color: gray"><i
-                                                            class="m-1 feather icon-log-in"></i>รับ</a>
-
-                                                    <!-- <a href="#"><i class="m-1 feather icon-log-in"></i>รับ</a> -->
-                                                </td>
-                                                <td>
-                                                    <!-- <a href="#"><i class="feather icon-check"></i> สำเร็จ</a> -->
-                                                    <a href="#" style="color: gray"><i class="feather icon-check"></i>
-                                                        สำเร็จ</a>
-                                                </td>
-                                            </tr>
+                                                        <div class="card ecommerce-card"><button
+                                                                class="btn wishlist remove-wishlist "
+                                                                style="background-color: #7367f0;color: white;">
+                                                                <i></i> รับรายการ
+                                                            </button> </div>
+                                                    </td>
+                                            </tr> -->
 
 
 
@@ -323,6 +317,8 @@
 
     <!-- BEGIN: Page JS-->
     <script src="../../../app-assets/js/scripts/datatables/user-datatable.js"></script>
+    <script src="../../../app-assets/js/scripts/pages/app-ecommerce-shop.js"></script>
+
     <!-- END: Page JS-->
 
 </body>

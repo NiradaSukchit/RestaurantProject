@@ -69,6 +69,7 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
                 <li class=" navigation-header"><span>สำหรับผู้จัดการ</span>
                 </li>
                 <li class=" nav-item"><a href="ManageEmployee.html"><i class="feather icon-users"></i><span
@@ -83,16 +84,20 @@
                 <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-printer"></i><span
                             class="menu-title" data-i18n="Calender">ดูประวัติการขาย</span></a>
                 </li>
-                <li class=" navigation-header"><span>สำหรับพนักงาน</span>
+                <li class=" navigation-header"><span>สำหรับผู้จัดการและพนักงาน</span>
                 </li>
-                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-crosshair"></i><span
-                            class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
+                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-bell"></i><span
+                            class="menu-title" data-i18n="Chat">บริการลูกค้า</span></a>
                 </li>
 
-                <li class=" navigation-header"><span>สำหรับครัว</span>
+
+                <li class=" navigation-header"><span>ผู้จัดการและสำหรับครัว</span>
                 </li>
                 <li class=" nav-item"><a href="Kitchen.html"><i class="feather icon-inbox"></i><span class="menu-title"
-                            data-i18n="Email">รายการอาหาร</span></a>
+                            data-i18n="Email">รายการอาหารที่ได้รับ</span></a>
+                </li>
+                <li class=" nav-item"><a href="KitchenHistory.html"><i class="feather icon-clipboard"></i><span
+                            class="menu-title" data-i18n="Email">รายการอาหาร</span></a>
                 </li>
 
             </ul>
@@ -177,11 +182,10 @@
                 </div>
 
             </div>
+
             <div class="content-body ">
-                <a href="OrderTable.html" class="btn btn-primary feather icon-arrow-left" style="color: white">
-                    ย้อนกลับ</a>
-                <!-- <a href="OrderMenu.html" class="btn btn-primary feather icon-plus-circle"
-                    style="color: white"  >  เพิ่มรายการอาหาร</a> -->
+                <a href="OrderTable.html" class="btn btn-primary feather icon-arrow-left "
+                    style="color: white; padding-left:35px; padding-right:35px; margin-left: 870px;"> ย้อนกลับ</a>
 
                 <form action="#">
                     <!-- Checkout Place order starts -->
@@ -197,10 +201,10 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                
+
                                                 <span>สเต็กแซลมอล</span>
-                                                <p class="item-company"> <span
-                                                        class="company-name">อาหารคาว</span></p>
+                                                <p class="item-company"> <span class="company-name"
+                                                        style="color: #FF0000">อาหารคาว</span></p>
                                             </div>
                                             <!-- <div class="item-quantity">
                                                 <p class="quantity-title">Quantity</p>
@@ -215,20 +219,22 @@
                                             </p>
                                             <!-- tag รายการอาหาร -->
                                             <p class="item-description">
-                                                <label><b>หมายเหตุ: </b> ไม่ใส่พริกไทย </label>
+                                                <label><b>หมายเหตุ: </b> ไม่ใส่พริกไทย </label> <br>
+                                                <label><b>เวลา: </b> 10:24 น. </label>
 
                                             </p>
 
                                             <div class="item-name">
-                                                <p class="item-company">สถานะอาหาร <span
-                                                        class="company-name">ได้รับรายการ</span></p>
+                                                <p class="item-company">สถานะอาหาร <span class="company-name"
+                                                        style="font-size:15px; color: red; "> ได้รับรายการ
+                                                    </span></p>
                                             </div>
                                         </div>
-                                        <div class="item-options text-center">
+                                        <div class="item-options text-center" style="background-color: red">
                                             <div class="item-wrapper">
 
                                                 <div class="item-cost">
-                                                    <h6 class="item-price">
+                                                    <h6 class="item-price" style="color: white">
                                                         ฿99 X 1 </h6>
 
                                                 </div>
@@ -251,10 +257,10 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                               
+
                                                 <span> คัพเค้ก</span>
-                                                <p class="item-company"> <span
-                                                        class="company-name">อาหารหวาน</span></p>
+                                                <p class="item-company"> <span class="company-name"
+                                                        style="color: #229954">อาหารหวาน</span></p>
                                             </div>
                                             <!-- <div class="item-quantity">
                                                     <p class="quantity-title">Quantity</p>
@@ -268,26 +274,29 @@
                                             </p>
                                             <!-- tag รายการอาหาร -->
                                             <p class="item-description">
-                                                <label><b>หมายเหตุ: </b> </label>
+                                                <label><b>หมายเหตุ: </b> </label> <br>
+                                                <label><b>เวลา: </b> 10:15 น. </label>
+
 
                                             </p>
                                             <div class="item-name">
-                                                <p class="item-company">สถานะอาหาร <span
-                                                        class="company-name">กำลังทำ</span></p>
+                                                <p class="item-company">สถานะอาหาร <span class="company-name"
+                                                        style="font-size:15px; color: #ffc107"> กำลังทำรายการ </span>
+                                                </p>
                                             </div>
                                         </div>
-                                        <div class="item-options text-center">
+                                        <div class="item-options text-center" style="background-color: #ffc107">
                                             <div class="item-wrapper">
 
                                                 <div class="item-cost">
-                                                    <h6 class="item-price">
+                                                    <h6 class="item-price" style="color: white">
                                                         ฿39 X 1</h6>
 
                                                 </div>
                                             </div>
-                                            <!-- <div class="wishlist remove-wishlist">
-                                                <i class="feather icon-x align-middle "></i> ยกเลิก
-                                            </div> -->
+                                            <div class="wishlist remove-wishlist feather icon-check">
+                                                <i></i> สำเร็จ
+                                            </div>
                                             <!-- <div class="cart remove-wishlist">
                                                     <i class="fa fa-heart-o mr-25"></i> Wishlist
                                                 </div> -->
@@ -304,10 +313,10 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                
+
                                                 <span> น้ำส้ม</span>
-                                                <p class="item-company"> <span
-                                                        class="company-name">เครื่องดื่ม</span></p>
+                                                <p class="item-company"> <span class="company-name"
+                                                        style="color: #0000FF">เครื่องดื่ม</span></p>
                                             </div>
                                             <!-- <div class="item-quantity">
                                                         <p class="quantity-title">Quantity</p>
@@ -321,19 +330,21 @@
                                             </p>
                                             <!-- tag รายการอาหาร -->
                                             <p class="item-description">
-                                                <label><b>หมายเหตุ: </b>หวานน้อย </label>
+                                                <label><b>หมายเหตุ: </b>หวานน้อย </label> <br>
+                                                <label><b>เวลา: </b> 10:14 น. </label>
 
                                             </p>
                                             <div class="item-name">
-                                                <p class="item-company">สถานะอาหาร <span
-                                                        class="company-name">รายการสำเร็จ</span></p>
+                                                <p class="item-company"> สถานะอาหาร <span class="company-name"
+                                                        style="font-size: 15px; color: #1BC250"> รายการสำเร็จ
+                                                    </span></p>
                                             </div>
                                         </div>
-                                        <div class="item-options text-center">
+                                        <div class="item-options text-center" style="background-color: #1BC250">
                                             <div class="item-wrapper">
 
                                                 <div class="item-cost">
-                                                    <h6 class="item-price">
+                                                    <h6 class="item-price" style="color: white; margin-top: 50px;">
                                                         ฿49 X 2 </h6>
 
                                                 </div>
@@ -341,6 +352,61 @@
                                             <!-- <div class="wishlist remove-wishlist">
                                                 <i class="feather icon-x align-middle "></i> ยกเลิก
                                             </div> -->
+                                            <!-- <div class="cart remove-wishlist">
+                                                        <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                                    </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card ecommerce-card">
+                                    <div class="card-content">
+                                        <div class="item-img text-center">
+                                            <img class="img-fluid" src="../../../app-assets/images/Project/cupcake.png"
+                                                alt="img-placeholder" height="100" width="100">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="item-name">
+
+                                                <span> คัพเค้ก</span>
+                                                <p class="item-company"> <span class="company-name"
+                                                        style="color: #229954">อาหารหวาน</span></p>
+                                            </div>
+                                            <!-- <div class="item-quantity">
+                                                        <p class="quantity-title">Quantity</p>
+                                                        <div class="input-group quantity-counter-wrapper">
+                                                            <input type="text" class="quantity-counter" value="1">
+                                                        </div>
+                                                    </div> -->
+                                            <p class="item-description">
+                                                คัพเค้กวานิลา <br>
+                                                #ขนม #หวาน #อาหารหวาน #เค้ก #วานิลา #คัพเค้ก
+                                            </p>
+                                            <!-- tag รายการอาหาร -->
+                                            <p class="item-description">
+                                                <label><b>หมายเหตุ: </b> </label> <br>
+                                                <label><b>เวลา: </b> 10:49 น. </label>
+
+
+                                            </p>
+                                            <div class="item-name">
+                                                <p class="item-company">สถานะอาหาร <span class="company-name"
+                                                        style="font-size: 15px; color: #1BC250"> รายการสำเร็จ
+                                                    </span></p>
+                                            </div>
+                                        </div>
+                                        <div class="item-options text-center" style="background-color: #1BC250">
+                                            <div class="item-wrapper">
+
+                                                <div class="item-cost">
+                                                    <h6 class="item-price" style="color: white;margin-top: 50px;">
+                                                        ฿39 X 1</h6>
+
+                                                </div>
+                                            </div>
+                                            <!-- <div class="wishlist remove-wishlist">
+                                                    <i class="feather icon-x align-middle "></i> ยกเลิก
+                                                </div> -->
                                             <!-- <div class="cart remove-wishlist">
                                                         <i class="fa fa-heart-o mr-25"></i> Wishlist
                                                     </div> -->
@@ -368,6 +434,23 @@
                                             </div>
                                             <div class="detail">
                                                 <div class="detail-title">
+                                                    หมายเลขใบเสร็จ
+                                                </div>
+                                                <div class="detail-amt">
+                                                    0001
+                                                </div>
+                                            </div>
+                                            <div class="detail">
+                                                    <div class="detail-title">
+                                                        จำนวน (รายการ)
+                                                    </div>
+                                                    <div class="detail-amt">
+                                                        4
+                                                    </div>
+                                                </div>
+
+                                            <div class="detail">
+                                                <div class="detail-title">
                                                     ราคารวม
                                                 </div>
                                                 <div class="detail-amt">
@@ -382,14 +465,7 @@
                                                     -0฿
                                                 </div>
                                             </div> -->
-                                            <div class="detail">
-                                                <div class="detail-title">
-                                                    จำนวน (รายการ)
-                                                </div>
-                                                <div class="detail-amt">
-                                                    4
-                                                </div>
-                                            </div>
+                                            
 
                                             <div class="detail">
                                                 <div class="detail-title">
@@ -401,10 +477,11 @@
                                             </div>
                                             <hr>
                                             <div class="detail">
-                                                <div class="detail-title detail-total">รวม</div>
+                                                <div class="detail-title detail-total">ยอดรวม</div>
                                                 <div class="detail-amt total-amt">฿236</div>
                                             </div>
-                                            <div class="btn btn-primary btn-block place-order feather icon-credit-card">
+                                            <div class="btn btn-primary btn-block place-order feather icon-credit-card"
+                                                sty>
                                                 ชำระเงิน</div>
                                         </div>
                                     </div>

@@ -68,31 +68,35 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
-                    <li class=" navigation-header"><span>สำหรับผู้จัดการ</span>
-                    </li>
-                    <li class=" nav-item"><a href="ManageEmployee.html"><i class="feather icon-users"></i><span
-                                class="menu-title" data-i18n="Email">จัดการพนักงาน</span></a>
-                    </li>
-                    <li class=" nav-item"><a href="ManageMenu.html"><i class="feather icon-book"></i><span
-                                class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
-                    </li>
-                    <li class=" nav-item"><a href="ManageTable.html"><i class="feather icon-layers"></i><span
-                                class="menu-title" data-i18n="Todo">จัดการโต๊ะ</span></a>
-                    </li>
-                    <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-printer"></i><span
-                                class="menu-title" data-i18n="Calender">ดูประวัติการขาย</span></a>
-                    </li>
-                    <li class=" navigation-header"><span>สำหรับพนักงาน</span>
-                    </li>
-                    <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-crosshair"></i><span
-                                class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
-                    </li>
-                    
-                    <li class=" navigation-header"><span>สำหรับครัว</span>
-                    </li>
-                    <li class=" nav-item"><a href="Kitchen.html"><i class="feather icon-inbox"></i><span class="menu-title"
-                                data-i18n="Email">รายการอาหาร</span></a>
-                    </li>
+                <li class=" navigation-header"><span>สำหรับผู้จัดการ</span>
+                </li>
+                <li class=" nav-item"><a href="ManageEmployee.html"><i class="feather icon-users"></i><span
+                            class="menu-title" data-i18n="Email">จัดการพนักงาน</span></a>
+                </li>
+                <li class=" nav-item"><a href="ManageMenu.html"><i class="feather icon-book"></i><span
+                            class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
+                </li>
+                <li class=" nav-item"><a href="ManageTable.html"><i class="feather icon-layers"></i><span
+                            class="menu-title" data-i18n="Todo">จัดการโต๊ะ</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-printer"></i><span
+                            class="menu-title" data-i18n="Calender">ดูประวัติการขาย</span></a>
+                </li>
+                <li class=" navigation-header"><span>สำหรับผู้จัดการและพนักงาน</span>
+                </li>
+                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-bell"></i><span
+                            class="menu-title" data-i18n="Chat">บริการลูกค้า</span></a>
+                </li>
+
+
+                <li class=" navigation-header"><span>ผู้จัดการและสำหรับครัว</span>
+                </li>
+                <li class=" nav-item"><a href="Kitchen.html"><i class="feather icon-inbox"></i><span class="menu-title"
+                            data-i18n="Email">รายการอาหารที่ได้รับ</span></a>
+                </li>
+                <li class=" nav-item"><a href="KitchenHistory.html"><i class="feather icon-clipboard"></i><span
+                            class="menu-title" data-i18n="Email">รายการอาหาร</span></a>
+                </li>
 
             </ul>
         </div>
@@ -179,8 +183,8 @@
                             <div class="row">
 
                                 <div class="ml-2">
-                                    <button type="button" class="btn btn-primary feather icon-plus-circle"
-                                        data-toggle="modal" data-target="#inlineForm">
+                                    <button type="button" class="btn btn-primary " data-toggle="modal"
+                                        data-target="#inlineForm">
                                         เพิ่ม
                                     </button>
                                     <div class="modal fade text-left" id="inlineForm" tabindex="-1" role="dialog"
@@ -189,7 +193,7 @@
                                             role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h4 class="modal-title" id="myModalLabel33">เพิ่มพนักงาน</h4>
+                                                    <h4 class="modal-title" id="myModalLabel33">เพิ่มโต๊ะ</h4>
                                                     <button type="button" class="close" data-dismiss="modal"
                                                         aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
@@ -239,13 +243,20 @@
                                                 <td>1</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success" 
+                                                    style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -254,13 +265,20 @@
                                                 <td>2</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-danger">ไม่ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-danger"style="font-size: 15px">ไม่ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: red;margin-left: 6px;">
+                                                        <b>ไม่ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -269,13 +287,19 @@
                                                 <td>3</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success"style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div>                                                </td> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                <td>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
-                                                </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -284,13 +308,20 @@
                                                 <td>4</td>
                                                 <td>6</td>
                                                 <td>
-                                                        <div class="w-200 badge badge-danger">ไม่ว่าง</div>
-                                                    </td>
-                                                <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <!-- <div class="w-200 badge badge-danger"style="font-size: 15px">ไม่ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: red;margin-left: 6px;">
+                                                        <b>ไม่ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -299,13 +330,20 @@
                                                 <td>5</td>
                                                 <td>10</td>
                                                 <td>
-                                                        <div class="w-200 badge badge-danger">ไม่ว่าง</div>
-                                                    </td>
-                                                <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <!-- <div class="w-200 badge badge-danger"style="font-size: 15px">ไม่ว่าง</div> -->
+                                                    <!-- <p style="font-size: 18px; color: red;margin-left: 6px;">
+                                                        <b>ไม่ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -314,13 +352,19 @@
                                                 <td>6</td>
                                                 <td>2</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success"style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div>                                                </td> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                <td>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
-                                                </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -329,13 +373,19 @@
                                                 <td>7</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success" style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div>                                                </td> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                <td>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
-                                                </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -344,28 +394,39 @@
                                                 <td>8</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success"style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div>                                                </td> -->
+                                                    <!-- <p style="font-size: 18px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                <td>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
-                                                </td>
-                                            </tr>
 
                                             <tr>
                                                 <td></td>
                                                 <td>9</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success"style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div>                                                </td> -->
+                                                    <!-- <p style="font-size: 20px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/available.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                <td>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
-                                                </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -374,13 +435,19 @@
                                                 <td>10</td>
                                                 <td>4</td>
                                                 <td>
-                                                    <div class="w-200 badge badge-success">ว่าง</div>
+                                                    <!-- <div class="w-200 badge badge-success"style="padding-left: 21px; padding-right:21px;font-size: 15px">ว่าง</div>                                                </td> -->
+                                                    <!-- <p style="font-size: 20px; color: green;margin-left: 15px;">
+                                                        <b>ว่าง</b> </p> -->
+                                                    <img src="../../../app-assets/images/Project/busy.png"
+                                                        style="width: 30px; height: 30px;" alt="">
+
+                                                <td>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
-                                                </td>
-                                                <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
                                         </tbody>

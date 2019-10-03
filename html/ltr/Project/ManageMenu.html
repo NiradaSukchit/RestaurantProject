@@ -84,16 +84,20 @@
                 <li class=" nav-item"><a href="app-calender.html"><i class="feather icon-printer"></i><span
                             class="menu-title" data-i18n="Calender">ดูประวัติการขาย</span></a>
                 </li>
-                <li class=" navigation-header"><span>สำหรับพนักงาน</span>
+                <li class=" navigation-header"><span>สำหรับผู้จัดการและพนักงาน</span>
                 </li>
-                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-crosshair"></i><span
-                            class="menu-title" data-i18n="Chat">จัดการรายการอาหาร</span></a>
+                <li class=" nav-item"><a href="OrderTable.html"><i class="feather icon-bell"></i><span
+                            class="menu-title" data-i18n="Chat">บริการลูกค้า</span></a>
                 </li>
 
-                <li class=" navigation-header"><span>สำหรับครัว</span>
+
+                <li class=" navigation-header"><span>ผู้จัดการและสำหรับครัว</span>
                 </li>
                 <li class=" nav-item"><a href="Kitchen.html"><i class="feather icon-inbox"></i><span class="menu-title"
-                            data-i18n="Email">รายการอาหาร</span></a>
+                            data-i18n="Email">รายการอาหารที่ได้รับ</span></a>
+                </li>
+                <li class=" nav-item"><a href="KitchenHistory.html"><i class="feather icon-clipboard"></i><span
+                            class="menu-title" data-i18n="Email">รายการอาหาร</span></a>
                 </li>
 
             </ul>
@@ -181,7 +185,7 @@
                             <div class="row">
 
                                 <div class="ml-2">
-                                    <button type="button" class="btn btn-primary feather icon-plus-circle"
+                                    <button type="button" class="btn btn-primary "
                                         data-toggle="modal" data-target="#inlineForm">
                                         เพิ่ม
                                     </button>
@@ -278,17 +282,22 @@
                                                 </td>
                                                 <td>สเต็กแซลมอล</td>
                                                 <td>
-                                                    <div class="w-300 badge badge-primary">อาหารคาว</div>
+                                                    <!-- <div class="w-300 badge badge-primary">อาหารคาว</div> -->
+                                                    <p style="font-size: 15px; color: #FF0000;text-align: center">
+                                                        <b>อาหารคาว</b> </p>
+
                                                 </td>
                                                 <td>99</td>
                                                 <td>สเต็กเนื้อแซลมอลย่าง พร้อมเครื่องเคียง <br> #ปลา #สเต็ก #อาหารคาว
                                                     #ย่าง #เครื่องเคียง <br> #แซลมอน
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -300,15 +309,20 @@
                                                 </td>
                                                 <td>ไก่งวง</td>
                                                 <td>
-                                                    <div class="w-300 badge badge-primary">อาหารคาว</div>
+                                                    <!-- <div class="w-300 badge badge-primary">อาหารคาว</div> -->
+                                                    <p style="font-size: 15px; color: #FF0000;text-align: center">
+                                                        <b>อาหารคาว</b> </p>
+
                                                 </td>
                                                 <td>150</td>
                                                 <td>ไก่งวงย่าง 1 ตัว <br> #ไก่ #ไก่งวง #อาหารคาว #ย่าง #เนื้อสัตว์</td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -316,20 +330,25 @@
                                                 <td></td>
                                                 <td>
                                                     <img class="" src="../../../app-assets/images/Project/Donut.png"
-                                                        alt="menu img holder" height="80" width="100">
+                                                        alt="menu img holder" height="70" width="100">
                                                 </td>
                                                 <td>โดนัท</td>
                                                 <td>
-                                                    <div class="w-300 badge badge-primary">อาหารหวาน</div>
+                                                    <!-- <div class="w-300 badge badge-primary">อาหารหวาน</div> -->
+                                                    <p style="font-size: 15px; color: #229954;text-align: center;">
+                                                        <b>อาหารหวาน</b> </p>
+
                                                 </td>
                                                 <td>59</td>
                                                 <td>โดนัท 2 ชิ้น (รสช็อคโกแลตและสตอเบอรรี่) <br> #โดนัท #ขนม #อาหารหวาน
                                                     #ช็อคโกแลต <br>#สตอเบอรรี่ #หวาน</td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -341,16 +360,21 @@
                                                 </td>
                                                 <td>คัพเค้ก</td>
                                                 <td>
-                                                    <div class="w-300 badge badge-primary">อาหารหวาน</div>
+                                                    <!-- <div class="w-300 badge badge-primary">อาหารหวาน</div> -->
+                                                    <p style="font-size: 15px; color: #229954;text-align: center;">
+                                                        <b>อาหารหวาน</b> </p>
+
                                                 </td>
                                                 <td>39</td>
                                                 <td>คัพเค้กวานิลา <br> #ขนม #หวาน #อาหารหวาน #เค้ก #วานิลา <br>#คัพเค้ก
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -363,15 +387,20 @@
                                                 </td>
                                                 <td>น้ำส้ม</td>
                                                 <td>
-                                                    <div class="w-300 badge badge-primary">เครื่องดื่ม</div>
+                                                    <!-- <div class="w-300 badge badge-primary">เครื่องดื่ม</div> -->
+                                                    <p style="font-size: 15px; color: #0000FF;text-align: center;">
+                                                        <b>เครื่องดื่ม</b> </p>
+
                                                 </td>
                                                 <td>49</td>
                                                 <td>น้ำส้มแท้ 100% <br> #เครื่องดื่ม #น้ำส้ม #ส้ม #น้ำ #หวาน</td>
                                                 <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
@@ -384,15 +413,21 @@
                                                 </td>
                                                 <td>น้ำมะนาว</td>
                                                 <td>
-                                                    <div class="w-300 badge badge-primary">เครื่องดื่ม</div>
+                                                    <!-- <div class="w-300 badge badge-primary">เครื่องดื่ม</div> -->
+                                                    <p style="font-size: 15px; color: #0000FF;text-align: center;">
+                                                        <b>เครื่องดื่ม</b> </p>
+
                                                 </td>
                                                 <td>49</td>
-                                                <td>น้ำมะนาวแท้ 100% <br> #เครื่องดื่ม #น้ำมะนาว #มะนาว #น้ำ #เปรี่ยว</td>
-                                                <td>
-                                                    <a href="#"><i class="m-1 feather icon-edit-2"></i></a>
+                                                <td>น้ำมะนาวแท้ 100% <br> #เครื่องดื่ม #น้ำมะนาว #มะนาว #น้ำ #เปรี่ยว
                                                 </td>
                                                 <td>
-                                                    <a href="#"><i class="feather icon-trash"></i> </a>
+                                                    <button class="btn btn-primary"
+                                                        style="padding-left: 20px; padding-right: 20px;">แก้ไข </button>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-primary">ลบ </button>
+                                                    <!-- <a href="#"><i class="feather icon-trash"></i> </a> -->
                                                 </td>
                                             </tr>
 
