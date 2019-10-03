@@ -615,8 +615,10 @@ select.form-control:not([multiple='multiple'])
     background-position: -webkit-calc(100% - 12px) 13px, -webkit-calc(100% - 20px) 13px, 100% 0;
     background-position:    -moz-calc(100% - 12px) 13px, -moz-calc(100% - 20px) 13px, 100% 0;
     background-position:         calc(100% - 12px) 13px, calc(100% - 20px) 13px, 100% 0;
-    -webkit-background-size: 12px 12px,    10px 10px;
-            background-size: 12px 12px,    10px 10px;
+    -webkit-background-size: 12px 12px,
+    10px 10px;
+            background-size: 12px 12px,
+    10px 10px;
 
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -4742,7 +4744,7 @@ _:-ms-lang(x),
 
     color: #fff;
     border-radius: 5rem;
-    background-color: #7367f0;
+    background-color: #000000;
 }
 .pagination .page-item:first-child:not(.prev-item).active
 {

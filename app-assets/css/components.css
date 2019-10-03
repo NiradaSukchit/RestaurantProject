@@ -1081,8 +1081,8 @@ body.fixed-footer footer.footer-dark
 {
     width: 35px; 
     height: 24px;
-
-    background: url('../../app-assets/images/logo/vuesax-logo.png') no-repeat;
+    border-radius: 3px;
+    background: url('https://sv1.picz.in.th/images/2019/10/03/cbTMJR.png');
     background-position: -65px -54px;
 }
 .main-menu .navbar-header .navbar-brand .brand-text

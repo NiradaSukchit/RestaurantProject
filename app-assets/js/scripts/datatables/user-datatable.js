@@ -24,7 +24,7 @@
             style:    'os',
             selector: 'td:first-child'
         },
-        order: [[ 1, 'asc' ]],
+        order: [[ 1, 'desc' ]],
 
          "lengthMenu": [[5, 25, 50, -1], [5, 25, 50, "All"]],
 
